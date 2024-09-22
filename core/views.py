@@ -1,13 +1,10 @@
 from django.shortcuts import redirect
 from django.views.generic import TemplateView
 from contact.forms import ContactMessagesForm
-from django.contrib.auth.decorators import login_required
-from django.utils.decorators import method_decorator
 
 # Create your views here.
 
 # Main page
-@method_decorator(login_required, name='dispatch')
 class Home(TemplateView):
     template_name = "core/index.html"
 

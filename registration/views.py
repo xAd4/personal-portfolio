@@ -1,9 +1,8 @@
 from django import forms
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
-from .forms import FormSignUpWithEmail  # Asegúrate de que el import del formulario es correcto
-
-# System Sign Up
+from .forms import FormSignUpWithEmail 
+# Registro de usuarios
 
 class SignUpView(CreateView):
     form_class = FormSignUpWithEmail

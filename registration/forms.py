@@ -1,8 +1,8 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
+from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
-
-class FormSignUpWithEmail(UserCreationForm): # -> Sign Up logic and security methods
+class FormSignUpWithEmail(UserCreationForm):
     email = forms.EmailField(
         required=True,
         help_text="Required. 254 characters maximum and must be unique."
@@ -13,7 +13,7 @@ class FormSignUpWithEmail(UserCreationForm): # -> Sign Up logic and security met
         fields = ("username", "email", "password1", "password2")
 
     def clean_email(self):
-        email = self.cleaned_data.get("email")
+        email = self.cleaned_data.get('email')
         if User.objects.filter(email=email).exists():
-            raise forms.ValidationError("Email already exists.")
+            raise ValidationError("User with this email already exists.")
         return email
