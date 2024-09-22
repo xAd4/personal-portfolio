@@ -1,0 +1,26 @@
+<form
+  action=""
+  method="post"
+  class="php-email-form"
+  data-aos="fade-up"
+  data-aos-delay="300"
+>
+  {% csrf_token %}
+  <div class="row gy-4">
+    <div class="col-md-6">{{ form.name }}</div>
+
+    <div class="col-md-6">{{ form.email }}</div>
+
+    <div class="col-md-12">{{ form.subject }}</div>
+
+    <div class="col-md-12">{{ form.message }}</div>
+
+    <div class="col-md-12 text-center">
+      <div class="loading">Cargando</div>
+      <div class="error-message"></div>
+      <div class="sent-message">Tu mensaje ha sido enviado. Muchas gracias!</div>
+
+      <button type="submit">Enviar mensaje</button>
+    </div>
+  </div>
+</form>

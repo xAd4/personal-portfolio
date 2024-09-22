@@ -1,71 +1,121 @@
 <!-- Default -->
 {% extends "core/base.html" %}
 <!-- Content -->
-{% block content %}
+{% block content %} 
 {% load static %}
 <main class="main">
-
   <!-- Hero Section -->
   <section id="hero" class="hero section dark-background">
+    <img
+      src="{% static 'core/assets/img/portfolio.png' %}"
+      alt=""
+      data-aos="fade-in"
+    />
 
-    <img src="{% static 'core/assets/img/portfolio.png' %}" alt="" data-aos="fade-in"> 
-
-    <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+    <div
+      class="container d-flex flex-column align-items-center justify-content-center text-center"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <h2>Ángel Estarita</h2>
-      <p><span class="typed" data-typed-items="Desarrollador Web Backend, Freelancer"></span></p>
+      <p>
+        <span
+          class="typed"
+          data-typed-items="Desarrollador Web Backend, Freelancer"
+        ></span>
+      </p>
     </div>
-
-  </section><!-- /Hero Section -->
+  </section>
+  <!-- /Hero Section -->
 
   <!-- About Section -->
   <section id="about" class="about section">
-
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-
       <div class="row gy-4">
         <div class="col-md-6">
-
           <div class="row justify-content-between gy-4">
             <div class="col-lg-5">
-              <img src="{% static 'core/assets/img/profile-img.jpg' %}" class="img-fluid" alt="">
+              <img
+                src="{% static 'core/assets/img/profile-img.jpg' %}"
+                class="img-fluid"
+                alt=""
+              />
             </div>
             <div class="col-lg-7 about-info">
               <p><strong>Nombre: </strong> <span>Ángel Estarita</span></p>
-              <p><strong>Oficio: </strong> <span>Desarrollador Web Backend</span></p>
-              <p><strong>Email: </strong> <span>gabrielcardozo3579@gmail.com</span></p>
+              <p>
+                <strong>Oficio: </strong> <span>Desarrollador Web Backend</span>
+              </p>
+              <p>
+                <strong>Email: </strong>
+                <span>gabrielcardozo3579@gmail.com</span>
+              </p>
               <p><strong>Teléfono: </strong> <span>+58 412-6052308</span></p>
             </div>
           </div>
 
           <div class="skills-content skills-animation">
-
             <h5>Habilidades</h5>
 
             <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">100%</i></span>
+              <span class="skill"
+                ><span>Python</span> <i class="val">100%</i></span
+              >
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
+            <!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Django</span> <i class="val">100%</i></span>
+              <span class="skill"
+                ><span>Django</span> <i class="val">100%</i></span
+              >
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
+            <!-- End Skills Item -->
             <div class="progress">
-              <span class="skill"><span>Git</span> <i class="val">100%</i></span>
+              <span class="skill"
+                ><span>Git</span> <i class="val">100%</i></span
+              >
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
+            <!-- End Skills Item -->
             <div class="progress">
               <span class="skill"><span>SQL</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
+            <!-- End Skills Item -->
           </div>
         </div>
 
@@ -73,70 +123,89 @@
           <div class="about-me">
             <h4>Sobre mí</h4>
             <p>
-              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-              imperdiet et, porttitor
-              at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-              porttitor accumsan tincidunt.
+              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Praesent sapien massa, convallis a pellentesque nec, egestas non
+              nisi. Nulla porttitor accumsan tincidunt.
             </p>
             <p>
-              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-              porttitor volutpat. Vestibulum
-              ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum
+              ac diam sit amet quam vehicula elementum sed sit amet dui.
+              porttitor at sem.
             </p>
             <p>
-              Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-              Nulla porttitor accumsan
-              tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut
+              lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
             </p>
           </div>
         </div>
       </div>
-
     </div>
-
-  </section><!-- /About Section -->
+  </section>
+  <!-- /About Section -->
 
   <!-- Resume Section -->
   <section id="resume" class="resume section">
-
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Currículum</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+      <p>
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </p>
+    </div>
+    <!-- End Section Title -->
 
     <div class="container">
-
       <div class="row">
-
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
           <h3 class="resume-title">Sumary</h3>
 
           <div class="resume-item pb-0">
             <h4>Brandon Johnson</h4>
-            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+            <p>
+              <em
+                >Innovative and deadline-driven Graphic Designer with 3+ years
+                of experience designing and developing user-centered
+                digital/print marketing material from initial concept to final,
+                polished deliverable.</em
+              >
+            </p>
             <ul>
               <li>Portland par 127,Orlando, FL</li>
               <li>(123) 456-7891</li>
               <li>alice.barkley@example.com</li>
             </ul>
-          </div><!-- Edn Resume Item -->
+          </div>
+          <!-- Edn Resume Item -->
 
           <h3 class="resume-title">Education</h3>
           <div class="resume-item">
             <h4>Master of Fine Arts &amp; Graphic Design</h4>
             <h5>2015 - 2016</h5>
             <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-          </div><!-- Edn Resume Item -->
+            <p>
+              Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam
+              iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti
+              nerada porti sand markend
+            </p>
+          </div>
+          <!-- Edn Resume Item -->
 
           <div class="resume-item">
             <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
             <h5>2010 - 2014</h5>
             <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-          </div><!-- Edn Resume Item -->
-
+            <p>
+              Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
+              reiciendis et quis Eius vel ratione eius unde vitae rerum
+              voluptates asperiores voluptatem Earum molestiae consequatur neque
+              etlon sader mart dila
+            </p>
+          </div>
+          <!-- Edn Resume Item -->
         </div>
 
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
@@ -146,57 +215,85 @@
             <h5>2019 - Present</h5>
             <p><em>Experion, New York, NY </em></p>
             <ul>
-              <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-              <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-              <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              <li>
+                Lead in the design, development, and implementation of the
+                graphic, layout, and production communication materials
+              </li>
+              <li>
+                Delegate tasks to the 7 members of the design team and provide
+                counsel on all aspects of the project.
+              </li>
+              <li>
+                Supervise the assessment of all graphic materials in order to
+                ensure quality and accuracy of the design
+              </li>
+              <li>
+                Oversee the efficient use of production project budgets ranging
+                from $2,000 - $25,000
+              </li>
             </ul>
-          </div><!-- Edn Resume Item -->
+          </div>
+          <!-- Edn Resume Item -->
 
           <div class="resume-item">
             <h4>Graphic design specialist</h4>
             <h5>2017 - 2018</h5>
             <p><em>Stepping Stone Advertising, New York, NY</em></p>
             <ul>
-              <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-              <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-              <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              <li>
+                Developed numerous marketing programs (logos,
+                brochures,infographics, presentations, and advertisements).
+              </li>
+              <li>
+                Managed up to 5 projects or tasks at a given time while under
+                pressure
+              </li>
+              <li>
+                Recommended and consulted with clients on the most appropriate
+                graphic design
+              </li>
+              <li>
+                Created 4+ design presentations and proposals a month for
+                clients and account managers
+              </li>
             </ul>
-          </div><!-- Edn Resume Item -->
-
+          </div>
+          <!-- Edn Resume Item -->
         </div>
-
       </div>
-
     </div>
-
-  </section><!-- /Resume Section -->
+  </section>
+  <!-- /Resume Section -->
 
   <!-- Services Section -->
   <section id="services" class="services section">
-
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Servicios</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+      <p>
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </p>
+    </div>
+    <!-- End Section Title -->
 
     <div class="container">
-
       <div class="row gy-4">
-
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-item  position-relative">
+          <div class="service-item position-relative">
             <div class="icon">
               <i class="bi bi-database"></i>
             </div>
             <a href="{% url 'service-details' %}" class="stretched-link">
               <h3>Gestión de Base de Datos y APIs</h3>
             </a>
-            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+            <p>
+              Provident nihil minus qui consequatur non omnis maiores. Eos
+              accusantium minus dolores iure perferendis tempore et consequatur.
+            </p>
           </div>
-        </div><!-- End Service Item -->
+        </div>
+        <!-- End Service Item -->
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
           <div class="service-item position-relative">
@@ -206,9 +303,13 @@
             <a href="{% url 'service-details' %}" class="stretched-link">
               <h3>Autenticación y Autorización de Usuarios</h3>
             </a>
-            <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            <p>
+              Ut autem aut autem non a. Sint sint sit facilis nam iusto sint.
+              Libero corrupti neque eum hic non ut nesciunt dolorem.
+            </p>
           </div>
-        </div><!-- End Service Item -->
+        </div>
+        <!-- End Service Item -->
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div class="service-item position-relative">
@@ -218,140 +319,254 @@
             <a href="{% url 'service-details' %}" class="stretched-link">
               <h3>Optimización y Escalabilidad del Servidor</h3>
             </a>
-            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            <p>
+              Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus
+              ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+            </p>
           </div>
-        </div><!-- End Service Item -->
+        </div>
+        <!-- End Service Item -->
       </div>
-
     </div>
-
-  </section><!-- /Services Section -->
+  </section>
+  <!-- /Services Section -->
   <!-- Portfolio Section -->
   <section id="portfolio" class="portfolio section">
-
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Portfolio</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+      <p>
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </p>
+    </div>
+    <!-- End Section Title -->
 
     <div class="container">
-
-      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
+      <div
+        class="isotope-layout"
+        data-default-filter="*"
+        data-layout="masonry"
+        data-sort="original-order"
+      >
+        <div
+          class="row gy-4 isotope-container"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-            <img src="{% static 'core/assets/img/portfolio/app-1.jpg' %}" class="img-fluid" alt="">
+            <img
+              src="{% static 'core/assets/img/portfolio/app-1.jpg' %}"
+              class="img-fluid"
+              alt=""
+            />
             <div class="portfolio-info">
               <h4>App 1</h4>
               <p>Lorem ipsum, dolor sit amet consectetur</p>
-              <a href="{% static 'core/assets/img/portfolio/app-1.jpg' %}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="{% url 'portfolio-details' %}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <a
+                href="{% static 'core/assets/img/portfolio/app-1.jpg' %}"
+                title="App 1"
+                data-gallery="portfolio-gallery-app"
+                class="glightbox preview-link"
+                ><i class="bi bi-zoom-in"></i
+              ></a>
+              <a
+                href="{% url 'portfolio-details' %}"
+                title="More Details"
+                class="details-link"
+                ><i class="bi bi-link-45deg"></i
+              ></a>
             </div>
-          </div><!-- End Portfolio Item -->
+          </div>
+          <!-- End Portfolio Item -->
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-            <img src="{% static 'core/assets/img/portfolio/app-1.jpg' %}" class="img-fluid" alt="">
+            <img
+              src="{% static 'core/assets/img/portfolio/app-1.jpg' %}"
+              class="img-fluid"
+              alt=""
+            />
             <div class="portfolio-info">
               <h4>App 2</h4>
               <p>Lorem ipsum, dolor sit amet consectetur</p>
-              <a href="{% static 'core/assets/img/portfolio/app-1.jpg' %}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="{% url 'portfolio-details' %}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-            </div> 
-          </div><!-- End Portfolio Item -->
+              <a
+                href="{% static 'core/assets/img/portfolio/app-1.jpg' %}"
+                title="App 2"
+                data-gallery="portfolio-gallery-app"
+                class="glightbox preview-link"
+                ><i class="bi bi-zoom-in"></i
+              ></a>
+              <a
+                href="{% url 'portfolio-details' %}"
+                title="More Details"
+                class="details-link"
+                ><i class="bi bi-link-45deg"></i
+              ></a>
+            </div>
+          </div>
+          <!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-            <img src="{% static 'core/assets/img/portfolio/app-1.jpg' %}" class="img-fluid" alt="">
+          <div
+            class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+          >
+            <img
+              src="{% static 'core/assets/img/portfolio/app-1.jpg' %}"
+              class="img-fluid"
+              alt=""
+            />
             <div class="portfolio-info">
               <h4>Product 2</h4>
               <p>Lorem ipsum, dolor sit amet consectetur</p>
-              <a href="{% static 'core/assets/img/portfolio/app-1.jpg' %}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="{% url 'portfolio-details' %}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-            </div> 
-          </div><!-- End Portfolio Item -->
-        </div><!-- End Portfolio Container -->
-
+              <a
+                href="{% static 'core/assets/img/portfolio/app-1.jpg' %}"
+                title="Product 2"
+                data-gallery="portfolio-gallery-product"
+                class="glightbox preview-link"
+                ><i class="bi bi-zoom-in"></i
+              ></a>
+              <a
+                href="{% url 'portfolio-details' %}"
+                title="More Details"
+                class="details-link"
+                ><i class="bi bi-link-45deg"></i
+              ></a>
+            </div>
+          </div>
+          <!-- End Portfolio Item -->
+        </div>
+        <!-- End Portfolio Container -->
       </div>
-
     </div>
-
-  </section><!-- /Portfolio Section -->
+  </section>
+  <!-- /Portfolio Section -->
 
   <!-- Faq Section -->
   <section id="faq" class="faq section">
-
     <div class="container">
-
       <div class="row gy-4">
-
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
           <div class="content px-xl-5">
             <h3><span>Preguntas </span><strong>frecuentes</strong></h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+              aute irure dolor in reprehenderit
             </p>
           </div>
         </div>
 
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
           <div class="faq-container">
             <div class="faq-item faq-active">
-              <h3><span class="num">1.</span> <span> ¿Qué es una API y cuál es su función en el backend?</span></h3>
+              <h3>
+                <span class="num">1.</span>
+                <span>
+                  ¿Qué es una API y cuál es su función en el backend?</span
+                >
+              </h3>
               <div class="faq-content">
-                <p>Una API (Interfaz de Programación de Aplicaciones) permite que diferentes aplicaciones se comuniquen entre sí. En el backend, las APIs exponen datos y funcionalidades para que el frontend o servicios externos los consuman.</p>
+                <p>
+                  Una API (Interfaz de Programación de Aplicaciones) permite que
+                  diferentes aplicaciones se comuniquen entre sí. En el backend,
+                  las APIs exponen datos y funcionalidades para que el frontend
+                  o servicios externos los consuman.
+                </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
+            </div>
+            <!-- End Faq item-->
 
             <div class="faq-item">
-              <h3><span class="num">2.</span> <span>¿Cómo manejo la autenticación y autorización de usuarios?</span></h3>
+              <h3>
+                <span class="num">2.</span>
+                <span
+                  >¿Cómo manejo la autenticación y autorización de
+                  usuarios?</span
+                >
+              </h3>
               <div class="faq-content">
-                <p>Utilizo el sistema de autenticación de Django (django.contrib.auth) para gestionar el inicio de sesión, registro y permisos. Para las APIs, implemento autenticación con tokens o sesiones usando Django REST Framework, junto con permisos personalizados para controlar el acceso según roles de usuario.</p>
+                <p>
+                  Utilizo el sistema de autenticación de Django
+                  (django.contrib.auth) para gestionar el inicio de sesión,
+                  registro y permisos. Para las APIs, implemento autenticación
+                  con tokens o sesiones usando Django REST Framework, junto con
+                  permisos personalizados para controlar el acceso según roles
+                  de usuario.
+                </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
+            </div>
+            <!-- End Faq item-->
 
             <div class="faq-item">
-              <h3><span class="num">3.</span> <span>¿Qué es un ORM y cómo funciona en Django?</span></h3>
+              <h3>
+                <span class="num">3.</span>
+                <span>¿Qué es un ORM y cómo funciona en Django?</span>
+              </h3>
               <div class="faq-content">
-                <p>Un ORM (Object-Relational Mapping) permite interactuar con la base de datos usando modelos en lugar de SQL directo. En Django, el ORM convierte las consultas a SQL de manera automática.</p>
+                <p>
+                  Un ORM (Object-Relational Mapping) permite interactuar con la
+                  base de datos usando modelos en lugar de SQL directo. En
+                  Django, el ORM convierte las consultas a SQL de manera
+                  automática.
+                </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
+            </div>
+            <!-- End Faq item-->
 
             <div class="faq-item">
-              <h3><span class="num">4.</span> <span>¿Cómo optimizo el rendimiento de las consultas a la base de datos?</span></h3>
+              <h3>
+                <span class="num">4.</span>
+                <span
+                  >¿Cómo optimizo el rendimiento de las consultas a la base de
+                  datos?</span
+                >
+              </h3>
               <div class="faq-content">
-                <p>Uso de <b>select_related</b> y <b>prefetch_related</b> en Django para evitar consultas repetitivas (N+1 problem). También implemento paginación, caching y optimización de índices en la base de datos.</p>
+                <p>
+                  Uso de <b>select_related</b> y <b>prefetch_related</b> en
+                  Django para evitar consultas repetitivas (N+1 problem).
+                  También implemento paginación, caching y optimización de
+                  índices en la base de datos.
+                </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
+            </div>
+            <!-- End Faq item-->
 
             <div class="faq-item">
-              <h3><span class="num">5.</span> <span>¿Cómo manejas errores y excepciones en un API?</span></h3>
+              <h3>
+                <span class="num">5.</span>
+                <span>¿Cómo manejas errores y excepciones en un API?</span>
+              </h3>
               <div class="faq-content">
-                <p>Utilizo manejo de excepciones con bloques try-except y devuelvo respuestas con códigos HTTP adecuados (como 400 para errores del cliente o 500 para errores del servidor). En Django, DRF tiene clases de excepción como APIException.</p>
+                <p>
+                  Utilizo manejo de excepciones con bloques try-except y
+                  devuelvo respuestas con códigos HTTP adecuados (como 400 para
+                  errores del cliente o 500 para errores del servidor). En
+                  Django, DRF tiene clases de excepción como APIException.
+                </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
-
+            </div>
+            <!-- End Faq item-->
           </div>
-
         </div>
       </div>
-
     </div>
-
-  </section><!-- /Faq Section -->
+  </section>
+  <!-- /Faq Section -->
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="testimonials section heading-color">
-
-    <img src="{% static 'core/assets/img/testimonial.jpg' %}" class="testimonials-bg" alt=""> 
+    <img
+      src="{% static 'core/assets/img/testimonial.jpg' %}"
+      class="testimonials-bg"
+      alt=""
+    />
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-
       <div class="swiper init-swiper">
         <script type="application/json" class="swiper-config">
           {
@@ -369,109 +584,166 @@
           }
         </script>
         <div class="swiper-wrapper">
-
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="{% static 'core/assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt=""> 
+              <img
+                src="{% static 'core/assets/img/testimonials/testimonials-1.jpg' %}"
+                class="testimonial-img"
+                alt=""
+              />
               <h3>Saul Goodman</h3>
               <h4>Ceo &amp; Founder</h4>
               <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                <span
+                  >Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies
+                  eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                  semper.</span
+                >
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div><!-- End testimonial item -->
+          </div>
+          <!-- End testimonial item -->
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="{% static 'core/assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+              <img
+                src="{% static 'core/assets/img/testimonials/testimonials-2.jpg' %}"
+                class="testimonial-img"
+                alt=""
+              />
               <h3>Sara Wilsson</h3>
               <h4>Designer</h4>
               <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                <span
+                  >Export tempor illum tamen malis malis eram quae irure esse
+                  labore quem cillum quid cillum eram malis quorum velit fore
+                  eram velit sunt aliqua noster fugiat irure amet legam anim
+                  culpa.</span
+                >
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div><!-- End testimonial item -->
+          </div>
+          <!-- End testimonial item -->
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="{% static 'core/assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+              <img
+                src="{% static 'core/assets/img/testimonials/testimonials-3.jpg' %}"
+                class="testimonial-img"
+                alt=""
+              />
               <h3>Jena Karlis</h3>
               <h4>Store Owner</h4>
               <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                <span
+                  >Enim nisi quem export duis labore cillum quae magna enim sint
+                  quorum nulla quem veniam duis minim tempor labore quem eram
+                  duis noster aute amet eram fore quis sint minim.</span
+                >
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div><!-- End testimonial item -->
+          </div>
+          <!-- End testimonial item -->
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="{% static 'core/assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+              <img
+                src="{% static 'core/assets/img/testimonials/testimonials-4.jpg' %}"
+                class="testimonial-img"
+                alt=""
+              />
               <h3>Matt Brandon</h3>
               <h4>Freelancer</h4>
               <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                <span
+                  >Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.</span
+                >
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div><!-- End testimonial item -->
+          </div>
+          <!-- End testimonial item -->
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="{% static 'core/assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+              <img
+                src="{% static 'core/assets/img/testimonials/testimonials-5.jpg' %}"
+                class="testimonial-img"
+                alt=""
+              />
               <h3>John Larson</h3>
               <h4>Entrepreneur</h4>
               <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                <span
+                  >Quis quorum aliqua sint quem legam fore sunt eram irure
+                  aliqua veniam tempor noster veniam enim culpa labore duis sunt
+                  culpa nulla illum cillum fugiat legam esse veniam culpa fore
+                  nisi cillum quid.</span
+                >
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div><!-- End testimonial item -->
-
+          </div>
+          <!-- End testimonial item -->
         </div>
         <div class="swiper-pagination"></div>
       </div>
-
     </div>
-
-  </section><!-- /Testimonials Section -->
+  </section>
+  <!-- /Testimonials Section -->
 
   <!-- Contact Section -->
   <section id="contact" class="contact section">
-
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Contacto</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+      <p>
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </p>
+    </div>
+    <!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-
       <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
         <div class="row gy-5">
-
           <div class="col-lg-4">
             <div class="info-item d-flex align-items-center">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
@@ -480,7 +752,8 @@
                 <p>Venezuela, Caracas</p>
               </div>
             </div>
-          </div><!-- End Info Item -->
+          </div>
+          <!-- End Info Item -->
 
           <div class="col-lg-4">
             <div class="info-item d-flex align-items-center">
@@ -490,7 +763,8 @@
                 <p>+58 412-6052308</p>
               </div>
             </div>
-          </div><!-- End Info Item -->
+          </div>
+          <!-- End Info Item -->
 
           <div class="col-lg-4">
             <div class="info-item d-flex align-items-center">
@@ -500,45 +774,32 @@
                 <p>gabrielcardozo3579@gmail.com</p>
               </div>
             </div>
-          </div><!-- End Info Item -->
-
+          </div>
+          <!-- End Info Item -->
         </div>
       </div>
 
-      <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-        <div class="row gy-4">
-
-          <div class="col-md-6">
-            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+      {% comment "FORM" %} Form in contact_form.py {% endcomment %} 
+      {% if request.user.is_authenticated %} 
+      {% load contact_form %} {% contact_form %} 
+      {% else %}
+      <section class="main">
+        <!-- Starter Section Section -->
+        <div id="starter-section" class="starter-section section">
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>¿Quieres ponerte en contacto conmigo?</h2>
+            <p>
+              Crea una cuenta y envíame un mensaje mediante un formulario. Me pondré en contacto contigo en la mayor brevedad posible
+            </p>
           </div>
-
-          <div class="col-md-6 ">
-            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-          </div>
-
-          <div class="col-md-12">
-            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-          </div>
-
-          <div class="col-md-12">
-            <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-          </div>
-
-          <div class="col-md-12 text-center">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-            <button type="submit">Send Message</button>
-          </div>
-
         </div>
-      </form><!-- End Contact Form -->
-
+        <!-- /Starter Section Section -->
+      </section>
+      {% endif %}
     </div>
-
-  </section><!-- /Contact Section -->
-
+  </section>
+  <!-- /Contact Section -->
 </main>
 {% endblock content %}
 <!-- End content -->
