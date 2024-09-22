@@ -1,6 +1,7 @@
 from django.shortcuts import redirect
 from django.views.generic import TemplateView
 from contact.forms import ContactMessagesForm
+from job.models import *
 
 # Create your views here.
 
@@ -11,6 +12,9 @@ class Home(TemplateView):
     def get_context_data(self, **kwargs): # -> This logic allows sent instances-model the model DeppartmentAppointment through that form
         context = super().get_context_data(**kwargs)
         context['form'] = ContactMessagesForm()
+        context['summary'] = Summary.objects.all()
+        context['education'] = Education.objects.all()
+        context['experience'] = ProffesionalExperience.objects.all()
         return context
 
     def post(self, request, *args, **kwargs):

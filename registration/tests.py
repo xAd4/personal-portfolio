@@ -29,14 +29,14 @@ class SignUpViewTests(TestCase):
     def test_signup_success(self):
         # Testing a successful registration
         response = self.client.post(self.signup_url, data=self.valid_user_data)
-        self.assertEqual(response.status_code, 302)  # Redirige tras el éxito
-        self.assertRedirects(response, reverse('login'))  # Redirige a la página de login
-        self.assertTrue(User.objects.filter(username='testuser').exists())  # Comprueba si el usuario fue creado
+        self.assertEqual(response.status_code, 302) 
+        self.assertRedirects(response, reverse('login')) 
+        self.assertTrue(User.objects.filter(username='testuser').exists()) 
 
     def test_signup_failure_due_to_invalid_data(self):
         # Testing failure due to invalid data
         response = self.client.post(self.signup_url, data=self.invalid_user_data)
-        self.assertEqual(response.status_code, 200)  # No debería redirigir
+        self.assertEqual(response.status_code, 200) 
         self.assertFormError(response, 'form', 'username', 'This field is required.')
         self.assertFormError(response, 'form', 'email', 'Enter a valid email address.')
         self.assertFormError(response, 'form', 'password2', "The two password fields didn’t match.")
