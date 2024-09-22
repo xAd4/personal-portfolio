@@ -15,11 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from . import settings
+# Registration URLs
+from registration import urls
 # Core URLs
 from core import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Authentication URLs
+    path("accounts/", include("django.contrib.auth.urls")),
+    path("accounts/", include("registration.urls")),
     # Core URLs
     path("", include("core.urls")),
 ]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

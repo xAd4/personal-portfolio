@@ -58,6 +58,28 @@
             <li><a href="#services">Servicios</a></li>
             <li><a href="#portfolio">Portafolio</a></li>
             <li><a href="#contact">Contacto</a></li>
+            {% if request.user.is_authenticated %}
+                
+            <li>
+              <a href="#" onclick="document.getElementById('logout-form').submit();"> Cerrar sesión <i></i></a>
+              <form id="logout-form" method="post" action="{% url 'logout' %}" style="display: none;">
+                  {% csrf_token %}
+              </form>
+          </li>
+            {% else %}
+            <a href="{% url 'login' %}">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>
+                Iniciar sesión
+              </span>
+            </a>
+            <a href="{% url 'signup' %}">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>
+                Registro
+              </span>
+            </a>
+            {% endif %}
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
