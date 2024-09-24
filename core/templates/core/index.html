@@ -21,7 +21,7 @@
       <p>
         <span
           class="typed"
-          data-typed-items="Desarrollador Web Backend, Freelancer"
+          data-typed-items="Desarrollador Backend, Freelancer"
         ></span>
       </p>
     </div>
@@ -36,7 +36,7 @@
           <div class="row justify-content-between gy-4">
             <div class="col-lg-5">
               <img
-                src="{% static 'core/assets/img/profile-img.jpg' %}"
+                src="{% static 'core/assets/img/logo.png' %}"
                 class="img-fluid"
                 alt=""
               />
@@ -44,7 +44,7 @@
             <div class="col-lg-7 about-info">
               <p><strong>Nombre: </strong> <span>Ángel Estarita</span></p>
               <p>
-                <strong>Oficio: </strong> <span>Desarrollador Web Backend</span>
+                <strong>Oficio: </strong> <span>Desarrollador Backend</span>
               </p>
               <p>
                 <strong>Email: </strong>
@@ -123,21 +123,7 @@
           <div class="about-me">
             <h4>Sobre mí</h4>
             <p>
-              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-              Praesent sapien massa, convallis a pellentesque nec, egestas non
-              nisi. Nulla porttitor accumsan tincidunt.
-            </p>
-            <p>
-              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-              Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum
-              ac diam sit amet quam vehicula elementum sed sit amet dui.
-              porttitor at sem.
-            </p>
-            <p>
-              Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut
-              lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
-              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Soy un desarrollador backend especializado en Django, con un enfoque en la creación de APIs y la gestión de bases de datos. Tengo experiencia en el diseño e implementación de sistemas de autenticación de usuarios y en el uso de formularios avanzados, garantizando la seguridad y la privacidad de los datos. Me apasiona desarrollar aplicaciones escalables y eficientes, aplicando las funciones avanzadas de Django para asegurar la calidad del software. Utilizo buenas prácticas de codificación y desarrollo para optimizar el rendimiento y seguridad del proyecto. Además, estoy explorando tecnologías como Docker y Node.js para expandir mis capacidades en el desarrollo backend.
             </p>
           </div>
         </div>
@@ -152,8 +138,9 @@
     <div class="container section-title" data-aos="fade-up">
       <h2>Currículum</h2>
       <p>
-        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-        consectetur velit
+        Soy estudiante de Ingeniería en Sistemas y desarrollador backend apasionado por la programación. He trabajado en proyectos independientes, como una aplicación para la gestión de citas en un hospital, un filtrador de restaurantes en Caracas y una web empresarial para la venta de cafés. Estos proyectos me han permitido aplicar mis conocimientos en Django.
+
+        He completado cursos en Python, JavaScript y Django en Udemy, lo que refuerza mi base en desarrollo web. Estoy comprometido con el aprendizaje continuo y disfruto colaborar en comunidades de programación para intercambiar ideas y enfrentar nuevos desafíos.
       </p>
     </div>
     <!-- End Section Title -->
@@ -225,52 +212,21 @@
 
     <div class="container">
       <div class="row gy-4">
+        {% for detailedService in services %}
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="service-item position-relative">
             <div class="icon">
-              <i class="bi bi-database"></i>
+              <i class="{{detailedService.icon}}"></i>
             </div>
             <a href="{% url 'service-details' %}" class="stretched-link">
-              <h3>Gestión de Base de Datos y APIs</h3>
+              <h3>{{detailedService.title}}</h3>
             </a>
             <p>
-              Provident nihil minus qui consequatur non omnis maiores. Eos
-              accusantium minus dolores iure perferendis tempore et consequatur.
+              {{detailedService.description}}
             </p>
           </div>
         </div>
-        <!-- End Service Item -->
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-item position-relative">
-            <div class="icon">
-              <i class="bi bi-emoji-grin-fill"></i>
-            </div>
-            <a href="{% url 'service-details' %}" class="stretched-link">
-              <h3>Autenticación y Autorización de Usuarios</h3>
-            </a>
-            <p>
-              Ut autem aut autem non a. Sint sint sit facilis nam iusto sint.
-              Libero corrupti neque eum hic non ut nesciunt dolorem.
-            </p>
-          </div>
-        </div>
-        <!-- End Service Item -->
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-item position-relative">
-            <div class="icon">
-              <i class="bi bi-braces"></i>
-            </div>
-            <a href="{% url 'service-details' %}" class="stretched-link">
-              <h3>Optimización y Escalabilidad del Servidor</h3>
-            </a>
-            <p>
-              Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus
-              ea aut. Vel qui id voluptas adipisci eos earum corrupti.
-            </p>
-          </div>
-        </div>
+        {% endfor %}
         <!-- End Service Item -->
       </div>
     </div>
@@ -352,21 +308,19 @@
           </div>
           <!-- End Portfolio Item -->
 
-          <div
-            class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-          >
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
             <img
               src="{% static 'core/assets/img/portfolio/app-1.jpg' %}"
               class="img-fluid"
               alt=""
             />
             <div class="portfolio-info">
-              <h4>Product 2</h4>
+              <h4>App 3</h4>
               <p>Lorem ipsum, dolor sit amet consectetur</p>
               <a
                 href="{% static 'core/assets/img/portfolio/app-1.jpg' %}"
-                title="Product 2"
-                data-gallery="portfolio-gallery-product"
+                title="App 3"
+                data-gallery="portfolio-gallery-app"
                 class="glightbox preview-link"
                 ><i class="bi bi-zoom-in"></i
               ></a>

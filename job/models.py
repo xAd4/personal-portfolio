@@ -17,7 +17,7 @@ class Summary(models.Model):
         verbose_name_plural = "Resumen"
 
     def __str__(self):
-        return 'Resumen de vida CV'
+        return f'Resumen de vida CV - {self.name}'
     
 # My educational background
 class Education(models.Model):
@@ -33,7 +33,7 @@ class Education(models.Model):
         verbose_name_plural = "Educación"
 
     def __str__(self):
-        return 'Educación CV'
+        return f'Educación CV - {self.training}'
     
 # Experience
 class ProffesionalExperience(models.Model):
@@ -49,7 +49,7 @@ class ProffesionalExperience(models.Model):
         verbose_name_plural = "Experiencia profesional"
 
     def __str__(self):
-        return 'Experiencia profesional CV'
+        return f'Experiencia profesional CV - {self.job}'
 
 
 

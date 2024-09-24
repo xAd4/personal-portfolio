@@ -2,6 +2,7 @@ from django.shortcuts import redirect
 from django.views.generic import TemplateView
 from contact.forms import ContactMessagesForm
 from job.models import *
+from services.models import *
 
 # Create your views here.
 
@@ -15,6 +16,7 @@ class Home(TemplateView):
         context['summary'] = Summary.objects.all()
         context['education'] = Education.objects.all()
         context['experience'] = ProffesionalExperience.objects.all()
+        context['services'] = Service.objects.all()
         return context
 
     def post(self, request, *args, **kwargs):
