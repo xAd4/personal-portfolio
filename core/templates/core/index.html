@@ -209,7 +209,6 @@
       </p>
     </div>
     <!-- End Section Title -->
-
     <div class="container">
       <div class="row gy-4">
         {% for detailedService in services %}
@@ -218,11 +217,11 @@
             <div class="icon">
               <i class="{{detailedService.icon}}"></i>
             </div>
-            <a href="{% url 'service-details' %}" class="stretched-link">
+            <a href="{% url 'service-details' detailedService.id %}" class="stretched-link">
               <h3>{{detailedService.title}}</h3>
             </a>
             <p>
-              {{detailedService.description}}
+              {{detailedService.description|striptags|safe|truncatechars:"150"}}
             </p>
           </div>
         </div>

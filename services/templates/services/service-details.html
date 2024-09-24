@@ -1,0 +1,42 @@
+<!-- Default -->
+{% extends "core/base.html" %}
+<!-- Content -->
+{% block content %}
+{% load static %}
+<main class="main">
+  <!-- Page Title -->
+  <div class="page-title" data-aos="fade">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+      <h1 class="mb-2 mb-lg-0">Service Details</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li class="current">Service Details</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Service Details Section -->
+  <section id="service-details" class="service-details section">
+
+    <div class="container">
+        <div class="col-lg-16" data-aos="fade-up" data-aos-delay="200">
+          <img src="{{services.image.url}}" alt="" class="img-fluid services-img">
+          <h3>{{services.title}}</h3>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> <span>Django</span></li>
+            <li><i class="bi bi-check-circle"></i> <span>MySQL</span></li>
+          </ul>
+          <p>
+            {{services.description|linebreaksbr}}
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Service Details Section -->
+{% endblock  %}
+<!-- End content -->
