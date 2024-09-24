@@ -22,9 +22,6 @@ class Home(TemplateView):
         return context
 
     def post(self, request, *args, **kwargs):
-        if not request.user.is_authenticated:
-            return redirect('login') 
-
         form = ContactMessagesForm(request.POST)
         if form.is_valid():
             appointment = form.save(commit=False)

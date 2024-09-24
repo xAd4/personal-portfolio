@@ -17,8 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from . import settings
-# Registration URLs
-from registration import urls
 # Core URLs
 from core import urls
 # Services URLs
@@ -28,9 +26,6 @@ from main import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # Authentication URLs
-    path("accounts/", include("django.contrib.auth.urls")),
-    path("accounts/", include("registration.urls")),
     # Core URLs
     path("", include("core.urls")),
     # Services URLs

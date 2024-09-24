@@ -6,12 +6,6 @@ from .forms import ContactMessagesForm
 
 # Create your tests here.
 class ContactFormTests(TestCase):
-
-    def setUp(self):
-        # Create an authenticated user for testing
-        self.user = User.objects.create_user(username='testuser', email='test123@test.com' ,password='12345')
-        self.client.login(username='testuser', password='12345')
-
     def test_contact_form_valid(self):
         # Test if the form is valid with correct data
         form_data = {
@@ -45,18 +39,6 @@ class ContactFormTests(TestCase):
         response = self.client.post(reverse('home'), form_data)
         self.assertEqual(response.status_code, 302, "Debería redirigir después de un envío exitoso")
         self.assertTrue(ContactMessages.objects.filter(name='John Doe').exists(), "Debería crear un mensaje de contacto")
-
-    def test_contact_form_post_with_authenticated_user(self):
-        # Test that an authenticated user can submit a form and that it is saved correctly
-        form_data = {
-            'name': 'John Doe',
-            'email': 'johndoe@example.com',
-            'subject': 'Consulta',
-            'message': 'Quiero saber más sobre tus servicios'
-        }
-        response = self.client.post(reverse('home'), data=form_data)
-        self.assertEqual(response.status_code, 302)
-        self.assertEqual(ContactMessages.objects.count(), 1)
 
     def test_contact_form_invalid_email(self):
         # Test that the form is not saved if the email is invalid

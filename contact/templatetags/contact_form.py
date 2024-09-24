@@ -6,8 +6,8 @@ register = template.Library()
 @register.inclusion_tag("contact/forms/contact_form.html", takes_context=True)
 def contact_form(context):
     request = context["request"]
-    if request.user.is_authenticated:
+    try:
         form = ContactMessagesForm()
         return {"form":form}
-    else:
+    except:
         return {"form": None}
