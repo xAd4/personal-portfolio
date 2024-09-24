@@ -3,6 +3,7 @@ from django.views.generic import TemplateView
 from contact.forms import ContactMessagesForm
 from job.models import *
 from services.models import *
+from main.models import *
 
 # Create your views here.
 
@@ -17,6 +18,7 @@ class Home(TemplateView):
         context['education'] = Education.objects.all()
         context['experience'] = ProffesionalExperience.objects.all()
         context['services'] = Service.objects.all()
+        context['projects'] = Project.objects.all()
         return context
 
     def post(self, request, *args, **kwargs):
@@ -30,10 +32,6 @@ class Home(TemplateView):
             appointment.save()
             return redirect('home')
         return self.get(request, *args, **kwargs, form=form)
-
-# Portfolio Detail
-class PortfolioDetails(TemplateView):
-    template_name = "core/portfolio-details.html"
 
 # Stater Page
 class StaterPage(TemplateView):

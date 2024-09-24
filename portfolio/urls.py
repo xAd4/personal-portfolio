@@ -23,6 +23,8 @@ from registration import urls
 from core import urls
 # Services URLs
 from services import urls
+# Main URLs
+from main import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,6 +35,8 @@ urlpatterns = [
     path("", include("core.urls")),
     # Services URLs
     path("", include("services.urls")),
+    # Main URLs
+    path("", include("main.urls")),
 ]
 
 if settings.DEBUG:
