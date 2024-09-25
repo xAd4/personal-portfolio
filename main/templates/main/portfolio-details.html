@@ -7,11 +7,11 @@
   <!-- Page Title -->
   <div class="page-title" data-aos="fade">
     <div class="container d-lg-flex justify-content-between align-items-center">
-      <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+      <h1 class="mb-2 mb-lg-0">Detalles del proyecto</h1>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="{% url 'home' %}">Home</a></li>
-          <li class="current">Portfolio Details</li>
+          <li><a href="{% url 'home' %}">Inicio</a></li>
+          <li class="current">Detalles del proyecto</li>
         </ol>
       </nav>
     </div>
@@ -90,8 +90,8 @@
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category</strong>{% for categories in proyecto.category.all %}{{categories}}{% endfor %}</li>
-              <li><strong>Client</strong>{% for clients in proyecto.client.all %}{{clients}}{% endfor %}</li>
+              <li><strong>Category</strong>{% for categories in proyecto.category.all %}{{categories}},{% endfor %}</li>
+              <li><strong>Client</strong>{% for clients in proyecto.client.all %}{{clients|join:", "}}{% endfor %}</li>
               <li><strong>Project date</strong>{{proyecto.projectFinished}}</li>
               <li><strong>Project URL</strong> <a href="{{proyecto.projectUrl}}">{{proyecto.projectUrl}}</a></li>
               <li><a href="{{proyecto.projectUrl}}" class="btn-visit align-self-start">Visit Website</a></li>
