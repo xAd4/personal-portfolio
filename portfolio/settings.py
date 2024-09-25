@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'job',
     'services',
     'main',
-    'faq',
     'contact',
 ]
 
