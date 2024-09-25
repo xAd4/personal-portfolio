@@ -40,3 +40,6 @@ pip-delete-this-directory.txt
 # Windows
 Thumbs.db
 ehthumbs.db
+
+# Project
+.media
